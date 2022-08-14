@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:textSize="25dp"
+        android:padding="25px"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textAlignment="center"
+        android:text="Calculadora IMC" />
+
+
+    <EditText
+        android:id="@+id/PesoText"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Digite su peso"
+        android:inputType="number"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/EdadText"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Digite su edad"
+        android:inputType="number"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/EstaturaText"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Digite su estatura en Cm"
+        android:inputType="number"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/femenino"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:textSize="16dp"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular IMC"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_salir"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_weight="1"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/list_actividad"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="IMC"
+            android:padding="25px"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Observación"
+            android:padding="25px"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/get_resultado"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:hint="GET"
+            android:padding="16px"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="165dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:text="Calcular GET" />
+
+    </LinearLayout>
+
+</LinearLayout>
